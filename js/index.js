@@ -1,4 +1,4 @@
-// For sticky Navbar
+console.log("Javscript Validation");
 function homeLink() {
   window.location.href = "index.html";
 }
