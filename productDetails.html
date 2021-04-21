@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>ZAMZAM</title>
+  </head>
+  <body>
+    <a id="onTop" onclick="topFunction()">
+      <img src="images/top.png" alt="" />
+    </a>
+
+    <header>
+      <span class="logo" onclick="homeLink()">ZAMZAM</span>
+      <!-- Social Media Icons -->
+      <span class="socialIcons">
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+      </span>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+      <ul class="menu" onclick="menuBar()">
+        <a href="javascript:void(0);" class="icon">
+          <i class="fa fa-bars"></i>Menu
+        </a>
+      </ul>
+      <ul id="navbar">
+        <li onclick="homeLink()">Home</li>
+        <li onclick="aboutLink()">About Us</li>
+        <li onclick="productLink()">
+          <button type="button" class="btn navHeading" onclick="contactLink()">
+            Products
+          </button>
+        </li>
+        <li onclick="contactLink()">Contact</li>
+      </ul>
+    </nav>
+
+    <div class="productImage">
+      <img src="images/product1.jpg" alt="" />
+    </div>
+    <div class="productDescription">
+      <div>Product Price: PKR 2500</div>
+      <div>Product Code: 00112233</div>
+      <div>Product in Stock: Yes</div>
+      <div>Product Discount: 20%</div>
+      <div>Available Sizes: Small, Medium, Large</div>
+    </div>
+    <div class="productDetails">
+      <section class="businessHeading">Product Details</section>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        voluptatem necessitatibus quis eveniet deleniti assumenda nulla
+        voluptate tempore quas aperiam nostrum iusto praesentium ex magni ipsa
+        velit exercitationem, dolore Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dolorem sequi architecto quasi accusamus aut cumque,
+        in nobis adipisci, quam assumenda cupiditate ipsa corrupti voluptas
+        earum officiis consequatur illo! Excepturi, eius! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ex magni libero et aliquid commodi.
+        Doloribus, voluptatem, assumenda nisi facere consequatur veniam ex sunt
+        ut, tenetur ducimus aliquid incidunt veritatis distinctio?
+      </div>
+      <br /><br />
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem maxime
+        reprehenderit quidem impedit nostrum ut, atque odit minima nulla nisi
+        eum molestiae id est autem dolor rem iste totam alias. Lorem ipsum dolor
+        sit, amet consectetur adipisicing elit. Dolore, repudiandae minima?
+        Laboriosam iste illo architecto, quos, magni recusandae nam in eligendi
+        officiis laudantium consequatur eveniet quasi! Omnis ea reiciendis
+        natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Distinctio natus numquam fuga officia. Placeat minus cupiditate dolorem
+        rerum debitis, asperiores esse voluptatem, ipsum tenetur voluptates
+        laboriosam excepturi dolor. Accusamus, culpa?
+      </div>
+      <br /><br />
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem maxime
+        reprehenderit quidem impedit nostrum ut, atque odit minima nulla nisi
+        eum molestiae id est autem dolor rem iste totam alias. Lorem ipsum dolor
+        sit, amet consectetur adipisicing elit. Dolore, repudiandae minima?
+        Laboriosam iste illo architecto, quos, magni recusandae nam in eligendi
+        officiis laudantium consequatur eveniet quasi! Omnis ea reiciendis
+        natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Distinctio natus numquam fuga officia. Placeat minus cupiditate dolorem
+        rerum debitis, asperiores esse voluptatem, ipsum tenetur voluptates
+        laboriosam excepturi dolor. Accusamus, culpa?
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <h4>Information</h4>
+        <li>Technical Support</li>
+        <li>Terms and conditions</li>
+        <li>Privacy policy</li>
+      </ul>
+      <ul>
+        <h4>Customer Care</h4>
+        <li>Contact</li>
+        <li>Feedback</li>
+        <li>FAQ</li>
+      </ul>
+      <ul>
+        <h4>Shopping</h4>
+        <li>Track Order</li>
+        <li>Returns</li>
+        <li>Payment Options</li>
+      </ul>
+      <ul>
+        <li>Subscribe us</li>
+        <li>
+          <input
+            type="text"
+            name="email"
+            placeholder="Your email..."
+            autocomplete="off"
+            style="
+              color: black;
+              margin-bottom: 5%;
+              border-radius: 4%;
+              padding: 4%;
+            "
+          />
+        </li>
+        <li>
+          <button type="button" class="btn">Get Upadtes</button>
+        </li>
+      </ul>
+      <div>
+        <span class="followUs">Follow us on</span>
+        <div class="footerSocialIcons">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-whatsapp"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

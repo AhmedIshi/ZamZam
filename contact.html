@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ZamZam</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <a id="onTop" onclick="topFunction()">
+      <img src="images/top.png" alt="" />
+    </a>
+
+    <!-- Header -->
+    <header>
+      <span class="logo" onclick="homeLink() ">ZAMZAM</span>
+      <!-- Social Media Icons -->
+      <span class="socialIcons">
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+      </span>
+    </header>
+    <!-- NavBar -->
+    <nav>
+      <ul class="menu" onclick="menuBar()">
+        <a href="javascript:void(0);" class="icon">
+          <i class="fa fa-bars"></i>Menu
+        </a>
+      </ul>
+      <ul id="navbar">
+        <li onclick="homeLink()">Home</li>
+        <li onclick="aboutLink()">About Us</li>
+        <li onclick="productLink()">Products</li>
+        <li>
+          <button type="button" class="btn navHeading" onclick="contactLink()">
+            Contact
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="banner">
+      <div id="bannerHeading">Contact Us</div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form1">
+      <div id="contactUs">Contact Us</div>
+      <form onsubmit="return validateForm()" action="temp.php" method="POST">
+        <label for="name" class="form-label">Name </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="First and Last Name"
+          autocomplete="off"
+          class="form-text form-control form-control-lg"
+        /><br />
+        <div id="nameError" role="alert"></div>
+        <label for="email" class="form-label">Email: </label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email address"
+          autocomplete="off"
+          class="form-text form-control form-control-lg"
+          aria-describedby="emailHelp"
+        />
+        <label id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </label>
+        <br />
+        <div id="emailError"></div>
+        <br />
+        <label for="mobileNumber" class="form-label">Phone: </label><br />
+        <input
+          type="text"
+          name="phone"
+          placeholder="Mobile Number"
+          id="mobileNumber"
+          class="form-control form-control-lg"
+          autocomplete="off"
+        /><br />
+        <div id="mobileNumberError"></div>
+        <br /><label> Role: </label>
+        <span class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="role"
+            id="teacher"
+          />
+          <label class="form-check-label" for="teacher"> Teacher </label
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+        <span class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="role"
+            id="student"
+            checked
+          />
+          <label class="form-check-label" for="student"> Student </label>
+        </span>
+        <br /><br />
+
+        <label for="city">City:</label>
+        <select
+          class="form-select form-select-lg mb-3"
+          aria-label="Lahore"
+          style="padding: 1%"
+          id="city"
+        >
+          <option selected>Select your city</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Islambad">Islamabad</option>
+          <option value="Multan">Multan</option>
+          <option value="Faisalbad">Faisalbad</option>
+          <option value="Rawalpindi">Rawalpindi</option>
+          <option value="Gujranwala">Gujranwala</option>
+        </select>
+        <br /><br />
+        <label for="message" class="form-label">Message: </label><br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          class="form-control form-control-lg"
+          autocomplete="off"
+          placeholder="Write your opinion"
+        ></textarea>
+        <br /><br />
+        <button
+          type="submit"
+          class="btn btn-block"
+          id="but"
+          style="border: 2px solid #eaeaea; border-radius: 0%"
+        >
+          Submit
+        </button>
+
+        <!-- <button type="button" class="btn btn-primray">SUBMIT HERE</button>  -->
+      </form>
+    </div>
+
+    <div class="address1">
+      <div>
+        <div>Current Region | Pakistan</div>
+        <div>Contact | 042-36604121</div>
+        <div>Connect With Us</div>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+      </div>
+    </div>
+
+    <div class="Map1">
+      <iframe
+        width="350vw"
+        height="450vw"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        id="gmap_canvas"
+        src="https://maps.google.com/maps?width=350&amp;height=200&amp;hl=en&amp;q=6%20Lahore+(paragon%20academy%20and%20school,%20Lahore)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      ></iframe>
+      <a href="https://add-map.org/">Map</a>
+      <script
+        type="text/javascript"
+        src="https://embedmaps.com/google-maps-authorization/script.js?id=c5e9ec8eff24b20fa87ad16e4eb492809229a39e"
+      ></script>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <h4>Information</h4>
+        <li>Technical Support</li>
+        <li>Terms and conditions</li>
+        <li>Privacy policy</li>
+      </ul>
+      <ul>
+        <h4>Customer Care</h4>
+        <li>Contact</li>
+        <li>Feedback</li>
+        <li>FAQ</li>
+      </ul>
+      <ul>
+        <h4>Shopping</h4>
+        <li>Track Order</li>
+        <li>Returns</li>
+        <li>Payment Options</li>
+      </ul>
+      <ul>
+        <li>Subscribe us</li>
+        <li>
+          <input
+            type="text"
+            name="email"
+            placeholder="Your email..."
+            autocomplete="off"
+            style="
+              color: black;
+              margin-bottom: 5%;
+              border-radius: 4%;
+              padding: 4%;
+            "
+          />
+        </li>
+        <li>
+          <button type="button" class="btn">Get Updates</button>
+        </li>
+      </ul>
+      <div>
+        <span class="followUs">Follow us on</span>
+        <div class="footerSocialIcons">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-whatsapp"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
