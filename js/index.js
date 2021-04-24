@@ -1,4 +1,5 @@
-// For sticky Navbar
+window.onscroll = function () { scrollShowNav(), scrollFunction() };
+
 function homeLink() {
   window.location.href = "index.html";
 }
@@ -12,32 +13,18 @@ function productLink() {
   window.location.href = "products.html";
 }
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   window.addEventListener("scroll", function () {
-//     if (window.scrollY > 20) {
-//       document.getElementById("navbar_top").classList.add("fixed-top");
-//       // add padding top to show content behind navbar
-//       navbar_height = document.querySelector(".navbar").offsetHeight;
-//       document.body.style.paddingTop = navbar_height + "px";
-//     } else {
-//       document.getElementById("navbar_top").classList.remove("fixed-top");
-//       // remove padding top from body
-//       document.body.style.paddingTop = "0";
-//     }
-//   });
-// });
 
+// For the purpose of Sticky Navbar
 
-// let stickyTop = document.getElementById("nav").offsetTop;
-// window.onscroll = function () { scrollShowNav() };
-// function scrollShowNav() {
-//   if (window.pageYOffset >= 20) {
-//     document.getElementById("nav").classList.add("fixed");
-//   } else {
-//     console.log("WOW");
-//     document.getElementById("nav").classList.remove("fixed");
-//   }
-// }
+let stickyTop = document.getElementById("nav").offsetTop;
+function scrollShowNav() {
+  if (window.pageYOffset >= 180) {
+    document.getElementById("nav").classList.add("fixed-top");
+  } else {
+    document.getElementById("nav").classList.remove("fixed-top");
+  }
+}
+
 
 function validateForm() {
 
@@ -116,10 +103,7 @@ function menuBar() {
   }
 }
 
-
-window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
-  // alert("Muhammad Ahmed");
   if (window.pageYOffset > 300) {
     document.getElementById("onTop").style.display = "block";
   } else {

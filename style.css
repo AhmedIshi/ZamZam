@@ -258,8 +258,11 @@ footer > ul > h4 {
 }
 .fixed-top {
   position: fixed;
-  transform: translateY(40px);
-  transition: transform 0.3s;
+  top: 0%;
+  transition: transform 1s;
+  width: 100%; 
+  z-index: 99;
+  
 }
 
 /* Contact Form  */
